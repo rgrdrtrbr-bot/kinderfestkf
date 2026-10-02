@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kinder Fest | Salão de Festas e Eventos em Canguçu - RS</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              blue: '#1EA1F2',
+              sky: '#38BDF8',
+              yellow: '#FFC800',
+              amber: '#F59E0B',
+              red: '#FF4252',
+              pink: '#FF4785',
+              purple: '#8B5CF6',
+              emerald: '#10B981',
+              dark: '#0F172A',
+            },
+            pastel: {
+              yellow: '#FEF9C3',
+              blue: '#E0F2FE',
+              amber: '#FFFBEB',
+              sky: '#F0F9FF',
+              card: 'rgba(255, 255, 255, 0.85)',
+            }
+          },
+          boxShadow: {
+            'glow-blue': '0 10px 30px -10px rgba(30, 161, 242, 0.3)',
+            'glow-amber': '0 10px 30px -10px rgba(251, 191, 36, 0.3)',
+            'soft-card': '0 12px 32px -8px rgba(15, 23, 42, 0.06)',
+            'card-hover': '0 20px 40px -12px rgba(15, 23, 42, 0.12)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glass-nav {
+      background: rgba(254, 252, 232, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(251, 191, 36, 0.3);
+    }
+    .badge-pulse {
+      animation: pulse-glow 2s infinite;
+    }
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+      50% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+    }
+    .carousel-slide {
+      transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-amber-50/80 via-sky-50/50 to-amber-50/70 text-slate-800 font-sans antialiased selection:bg-brand-blue selection:text-white flex flex-col min-h-screen">
+
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-amber-200/60 transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo using kinder10.jpg -->
+      <a href="#inicio" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-2xl bg-white p-1 shadow-md border border-amber-200 group-hover:scale-105 transition-transform duration-300 flex items-center justify-center overflow-hidden">
+          <img src="kinder10.jpg" alt="Kinder Fest Logomarca" class="w-full h-full object-contain">
+        </div>
+        <div>
+          <span class="font-display font-black text-2xl tracking-tight text-slate-900 block leading-none">
+            KINDER <span class="text-brand-blue">FEST</span>
+          </span>
+          <span class="text-[11px] font-bold tracking-wider text-amber-700 uppercase block mt-1">Festas & Eventos • Canguçu RS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-6 font-bold text-slate-700 text-sm">
+        <a href="#inicio" class="hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent hover:border-brand-blue">Início</a>
+        <a href="#sobre" class="hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent hover:border-brand-blue">Sobre</a>
+        <a href="#servicos" class="hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent hover:border-brand-blue">Serviços</a>
+        <a href="#diferenciais" class="hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent hover:border-brand-blue">Diferenciais</a>
+        <a href="#simulador" class="hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent hover:border-brand-blue">Simular Festa</a>
+        <a href="#galeria" class="hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent hover:border-brand-blue">Fotos</a>
+        <a href="#depoimentos" class="hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent hover:border-brand-blue">Avaliações</a>
+        <a href="#localizacao" class="hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent hover:border-brand-blue">Contato</a>
+      </nav>
+
+      <!-- Quick Action CTA -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://wa.me/5553999026014?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20datas%20dispon%C3%ADveis%20e%20or%C3%A7amento%20para%20minha%20festa%20na%20Kinder%20Fest." target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2.5 rounded-full text-sm font-extrabold shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 hover:-translate-y-0.5 transition-all flex items-center gap-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>(53) 99902-6014</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileMenuBtn" class="lg:hidden p-2.5 text-slate-700 hover:text-brand-blue focus:outline-none rounded-2xl bg-amber-100/80" aria-label="Abrir Menu">
+        <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-amber-50/95 border-b border-amber-200 px-6 py-5 space-y-4 shadow-xl">
+      <a href="#inicio" class="mobile-link block text-slate-800 font-bold text-base hover:text-brand-blue">Início</a>
+      <a href="#sobre" class="mobile-link block text-slate-800 font-bold text-base hover:text-brand-blue">Sobre</a>
+      <a href="#servicos" class="mobile-link block text-slate-800 font-bold text-base hover:text-brand-blue">Serviços</a>
+      <a href="#diferenciais" class="mobile-link block text-slate-800 font-bold text-base hover:text-brand-blue">Diferenciais</a>
+      <a href="#simulador" class="mobile-link block text-slate-800 font-bold text-base hover:text-brand-blue">Simulador de Festa</a>
+      <a href="#galeria" class="mobile-link block text-slate-800 font-bold text-base hover:text-brand-blue">Galeria de Fotos</a>
+      <a href="#depoimentos" class="mobile-link block text-slate-800 font-bold text-base hover:text-brand-blue">Depoimentos</a>
+      <a href="#localizacao" class="mobile-link block text-slate-800 font-bold text-base hover:text-brand-blue">Localização</a>
+      <div class="pt-2 border-t border-amber-200/60">
+        <a href="https://wa.me/5553999026014?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Kinder%20Fest%20e%20quero%20um%20or%C3%A7amento." target="_blank" class="w-full bg-emerald-500 text-white py-3 rounded-2xl font-bold flex items-center justify-center gap-2 shadow-md">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section id="inicio" class="pt-24 pb-12 md:pt-28 md:pb-16 bg-gradient-to-b from-amber-100/50 via-sky-50/40 to-amber-50/30 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Google Rating Badge Top -->
+      <div class="flex items-center justify-center md:justify-start gap-3 mb-5">
+        <div class="inline-flex items-center gap-2.5 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-sm border border-amber-200/80 text-xs sm:text-sm font-bold text-slate-700">
+          <span class="flex text-amber-400 gap-0.5">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="font-extrabold text-slate-900">4,9</span>
+          <span class="text-amber-300">•</span>
+          <span class="text-slate-600">Salão Nº 1 de Canguçu - RS</span>
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 badge-pulse"></span>
+        </div>
+      </div>
+
+      <!-- Hero Headline Grid -->
+      <div class="grid lg:grid-cols-12 gap-8 items-center mb-8">
+        <div class="lg:col-span-7 text-center md:text-left space-y-4">
+          <h1 class="font-display font-black text-3xl sm:text-5xl lg:text-6xl text-slate-900 tracking-tight leading-tight">
+            Momentos Inesquecíveis <br class="hidden sm:inline">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue via-sky-500 to-amber-500">
+              no Salão Perfeito para Toda Família!
+            </span>
+          </h1>
+          <p class="text-slate-600 text-base sm:text-xl font-medium max-w-2xl">
+            Sede própria, brinquedão completo, jogos eletrônicos para jovens e adultos e decorações temáticas sob medida no bairro Prado em Canguçu/RS.
+          </p>
+          
+          <div class="pt-2 flex flex-wrap items-center justify-center md:justify-start gap-4">
+            <a href="https://wa.me/5553999026014?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20datas%20e%20valores%20para%20minha%20festa%20no%20Kinder%20Fest." target="_blank" class="bg-gradient-to-r from-brand-blue to-sky-500 hover:from-sky-600 hover:to-brand-blue text-white font-extrabold px-7 py-4 rounded-2xl shadow-glow-blue hover:shadow-xl transition-all flex items-center gap-3 text-base">
+              <i class="fa-brands fa-whatsapp text-2xl"></i>
+              <span>Consultar Datas & Orçamento</span>
+            </a>
+            <a href="#simulador" class="bg-amber-400 hover:bg-amber-500 text-amber-950 font-extrabold px-6 py-4 rounded-2xl shadow-glow-amber transition-all flex items-center gap-2 text-base">
+              <i class="fa-solid fa-calculator text-lg"></i>
+              <span>Simular Minha Festa</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="bg-white/90 p-5 rounded-3xl border border-amber-200/90 shadow-soft-card max-w-sm w-full space-y-3 text-xs sm:text-sm font-semibold">
+            <div class="flex items-center gap-3 p-2.5 rounded-2xl bg-amber-50 text-amber-900 border border-amber-200/60">
+              <i class="fa-solid fa-check-circle text-emerald-500 text-lg"></i>
+              <span>Capacidade para até 100 convidados</span>
+            </div>
+            <div class="flex items-center gap-3 p-2.5 rounded-2xl bg-sky-50 text-sky-900 border border-sky-200/60">
+              <i class="fa-solid fa-check-circle text-emerald-500 text-lg"></i>
+              <span>Cockpit PS5, Subsoccer & Sinuca</span>
+            </div>
+            <div class="flex items-center gap-3 p-2.5 rounded-2xl bg-purple-50 text-purple-900 border border-purple-200/60">
+              <i class="fa-solid fa-check-circle text-emerald-500 text-lg"></i>
+              <span>Ambiente 100% Climatizado e Seguro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Carousel Slider using real Kinder Fest images -->
+      <div class="relative rounded-3xl overflow-hidden border border-amber-200/80 shadow-2xl bg-slate-900 h-[380px] sm:h-[480px] lg:h-[520px]">
+        
+        <!-- Slide 1: Salão para 100 pessoas -->
+        <div class="carousel-slide absolute inset-0 opacity-100 z-10 transition-all duration-700">
+          <img src="kinder8.jpg" alt="Salão de Festas Amplo Kinder Fest" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/30 to-transparent flex flex-col justify-end p-6 sm:p-10">
+            <div class="max-w-xl text-white space-y-2">
+              <span class="inline-block bg-brand-blue text-white font-extrabold text-xs px-3.5 py-1 rounded-full uppercase tracking-wider">
+                Infraestrutura Completa
+              </span>
+              <h3 class="font-display font-black text-2xl sm:text-3xl lg:text-4xl">Salão Espaçoso & Confortável para 100 Convidados</h3>
+              <p class="text-slate-200 text-xs sm:text-sm font-medium">Espaço limpo, iluminado e preparado para recepções e festas inesquecíveis.</p>
+              <a href="#servico-salao" class="inline-flex items-center gap-2 text-brand-yellow font-bold text-xs sm:text-sm pt-2 hover:underline">
+                <span>Ver detalhes do Salão</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Brinquedão & Infantil -->
+        <div class="carousel-slide absolute inset-0 opacity-0 z-0 transition-all duration-700">
+          <img src="kinder1.jpg" alt="Parque de Diversões e Brinquedão Infantil" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/30 to-transparent flex flex-col justify-end p-6 sm:p-10">
+            <div class="max-w-xl text-white space-y-2">
+              <span class="inline-block bg-brand-pink text-white font-extrabold text-xs px-3.5 py-1 rounded-full uppercase tracking-wider">
+                Diversão Garantida
+              </span>
+              <h3 class="font-display font-black text-2xl sm:text-3xl lg:text-4xl">Brinquedão, Tobogã & Piscina de Bolinhas</h3>
+              <p class="text-slate-200 text-xs sm:text-sm font-medium">Estrutura segura, higienizada e supervisionada para a diversão de todas as crianças.</p>
+              <a href="#servico-kids" class="inline-flex items-center gap-2 text-brand-yellow font-bold text-xs sm:text-sm pt-2 hover:underline">
+                <span>Ver detalhes do Brinquedão</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Jogos Eletrônicos & PS5 -->
+        <div class="carousel-slide absolute inset-0 opacity-0 z-0 transition-all duration-700">
+          <img src="kinder5.jpg" alt="Simulador de Corrida Cockpit PS5 Kinder Fest" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/30 to-transparent flex flex-col justify-end p-6 sm:p-10">
+            <div class="max-w-xl text-white space-y-2">
+              <span class="inline-block bg-purple-600 text-white font-extrabold text-xs px-3.5 py-1 rounded-full uppercase tracking-wider">
+                Jogos Modernos
+              </span>
+              <h3 class="font-display font-black text-2xl sm:text-3xl lg:text-4xl">Cockpit PS5, Subsoccer & Arcades</h3>
+              <p class="text-slate-200 text-xs sm:text-sm font-medium">Entretenimento diferenciado para jovens, adolescentes e adultos em todos os momentos.</p>
+              <a href="#servico-jogos" class="inline-flex items-center gap-2 text-brand-yellow font-bold text-xs sm:text-sm pt-2 hover:underline">
+                <span>Ver detalhes dos Jogos</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: Decoração Temática -->
+        <div class="carousel-slide absolute inset-0 opacity-0 z-0 transition-all duration-700">
+          <img src="kinder9.jpg" alt="Decoração Temática Kinder Fest" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/30 to-transparent flex flex-col justify-end p-6 sm:p-10">
+            <div class="max-w-xl text-white space-y-2">
+              <span class="inline-block bg-emerald-500 text-white font-extrabold text-xs px-3.5 py-1 rounded-full uppercase tracking-wider">
+                Decoração Customizada
+              </span>
+              <h3 class="font-display font-black text-2xl sm:text-3xl lg:text-4xl">Decorações Temáticas ao Gosto do Cliente</h3>
+              <p class="text-slate-200 text-xs sm:text-sm font-medium">Montagem personalizada diretamente no salão conforme o tema escolhido para seu evento.</p>
+              <a href="#servico-decoracao" class="inline-flex items-center gap-2 text-brand-yellow font-bold text-xs sm:text-sm pt-2 hover:underline">
+                <span>Ver opções de Decoração</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Navigation Controls -->
+        <button id="prevSlide" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/30 backdrop-blur-md hover:bg-white text-slate-900 flex items-center justify-center transition-all" aria-label="Anterior">
+          <i class="fa-solid fa-chevron-left text-lg"></i>
+        </button>
+        <button id="nextSlide" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/30 backdrop-blur-md hover:bg-white text-slate-900 flex items-center justify-center transition-all" aria-label="Próximo">
+          <i class="fa-solid fa-chevron-right text-lg"></i>
+        </button>
+
+        <!-- Carousel Dots -->
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2" id="carouselDots">
+          <button data-slide="0" class="w-8 h-2.5 rounded-full bg-white transition-all"></button>
+          <button data-slide="1" class="w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+          <button data-slide="2" class="w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+          <button data-slide="3" class="w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="sobre" class="py-16 sm:py-20 bg-gradient-to-b from-amber-50/40 via-amber-100/30 to-sky-50/40 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col items-center text-center mb-12">
+        <div class="inline-flex items-center gap-2 bg-amber-100 px-4 py-1.5 rounded-full text-xs font-bold text-amber-900 uppercase tracking-widest mb-3 border border-amber-300/60">
+          <span class="w-2 h-2 rounded-full bg-brand-blue"></span>
+          SEÇÃO SOBRE NÓS • OBJETIVO: Transmitir Credibilidade & Tradição
+        </div>
+        <h2 class="font-display font-black text-3xl sm:text-4xl text-slate-900 tracking-tight">
+          A estrutura dos seus sonhos para celebrar momentos marcantes
+        </h2>
+        <p class="text-slate-600 max-w-2xl mt-3 text-base sm:text-lg font-normal">
+          Planejado e construído em cada detalhe para proporcionar o máximo conforto para os adultos e pura diversão para a garotada.
+        </p>
+      </div>
+
+      <!-- Optimized Layout without empty gaps -->
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+        
+        <!-- Left Real Images Collaged Card (Fills height without gaps) -->
+        <div class="lg:col-span-6 flex flex-col justify-between h-full bg-white/90 rounded-3xl p-4 sm:p-5 border border-amber-200/80 shadow-md">
+          <div class="grid grid-cols-2 gap-4 h-full min-h-[320px]">
+            <div class="rounded-2xl overflow-hidden shadow-md border border-slate-200 relative group h-full">
+              <img src="kinder8.jpg" alt="Salão de Festas Kinder Fest" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute bottom-3 left-3 right-3 bg-slate-900/80 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-xl text-center">
+                Salão Amplo & Aconchegante
+              </span>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-md border border-slate-200 relative group h-full">
+              <img src="kinder1.jpg" alt="Piscina de Bolinhas e Parque Infantil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute bottom-3 left-3 right-3 bg-slate-900/80 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-xl text-center">
+                Brinquedão & Divertimento
+              </span>
+            </div>
+          </div>
+
+          <!-- Bottom Highlight Strip Inside Image Box -->
+          <div class="mt-4 bg-amber-50/80 border border-amber-200 rounded-2xl p-4 flex items-center justify-between text-xs font-bold text-amber-900">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-star text-amber-500 text-sm"></i>
+              <span>Classificação 4,9 no Google</span>
+            </div>
+            <div class="flex items-center gap-2 text-brand-blue">
+              <i class="fa-solid fa-users text-sm"></i>
+              <span>Até 100 Convidados</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content & Copy (Proportionally balanced) -->
+        <div class="lg:col-span-6 bg-white/90 rounded-3xl p-6 sm:p-8 border border-amber-200/80 shadow-md flex flex-col justify-between space-y-6">
+          <div>
+            <div class="inline-block text-brand-blue font-extrabold text-xs sm:text-sm tracking-wide uppercase mb-2">
+              Sede Própria & Infraestrutura Completa
+            </div>
+            <h3 class="font-display font-black text-2xl sm:text-3xl text-slate-900 leading-snug mb-4">
+              "Salão de Festas e Eventos que foi planejado para atender toda a família."
+            </h3>
+            <p class="text-slate-600 leading-relaxed text-sm sm:text-base mb-3">
+              Localizado no nobre bairro Prado em Canguçu/RS, o <strong>Kinder Fest</strong> possui estrutura própria pensada exclusivamente para eventos inesquecíveis. Com capacidade para <strong>até 100 convidados</strong>, nosso espaço une aconchego, higiene, iluminação moderna e máxima segurança.
+            </p>
+            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+              Oferecemos uma variedade incrível de entretenimento para todas as faixas etárias: desde o clássico brinquedão com tobogã e piscina de bolinhas para os pequenos, até área de arcade, jogos eletrônicos, cockpit com simulador PS5 e mesa de sinuca para jovens e pais.
+            </p>
+          </div>
+
+          <!-- Highlight Feature Cards -->
+          <div class="grid sm:grid-cols-2 gap-3 pt-2">
+            <div class="p-3.5 rounded-2xl bg-sky-50/80 border border-sky-200/80">
+              <div class="flex items-center gap-2 text-brand-blue font-bold text-sm mb-1">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Segurança em 1º Lugar</span>
+              </div>
+              <p class="text-xs text-slate-600">Ambiente 100% fechado, climatizado e seguro para as crianças brincarem despreocupadas.</p>
+            </div>
+            <div class="p-3.5 rounded-2xl bg-amber-50/80 border border-amber-200/80">
+              <div class="flex items-center gap-2 text-amber-700 font-bold text-sm mb-1">
+                <i class="fa-solid fa-face-smile"></i>
+                <span>Atendimento Nota 10</span>
+              </div>
+              <p class="text-xs text-slate-600">Equipe dedicada para garantir que seu evento ocorra sem contratempos do início ao fim.</p>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="pt-2 flex flex-wrap items-center gap-4">
+            <a href="https://wa.me/5553999026014?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20para%20conhecer%20o%20sal%C3%A3o%20Kinder%20Fest." target="_blank" class="bg-slate-900 hover:bg-slate-800 text-white px-6 py-3.5 rounded-2xl font-extrabold text-sm shadow-md transition-all flex items-center gap-2">
+              <i class="fa-solid fa-calendar-check text-brand-yellow"></i>
+              <span>Agendar Visita ao Salão</span>
+            </a>
+            <a href="#localizacao" class="text-slate-700 hover:text-brand-blue font-bold text-sm underline underline-offset-4">
+              Ver Endereço e Mapa
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="servicos" class="py-20 bg-gradient-to-b from-sky-50/50 via-amber-50/40 to-sky-50/50 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col items-center text-center mb-16">
+        <div class="inline-flex items-center gap-2 bg-sky-100 px-4 py-1.5 rounded-full text-xs font-bold text-brand-blue uppercase tracking-widest mb-3 border border-sky-200">
+          <span class="w-2 h-2 rounded-full bg-brand-blue"></span>
+          SEÇÃO SERVIÇOS • OBJETIVO: Apresentar Soluções e Estrutura
+        </div>
+        <h2 class="font-display font-black text-3xl sm:text-4xl text-slate-900 tracking-tight">
+          Nossos Serviços & Infraestrutura
+        </h2>
+        <p class="text-slate-600 max-w-2xl mt-3 text-base sm:text-lg font-normal">
+          Tudo o que você precisa para realizar desde aniversários infantis até celebrações de 15 anos e eventos familiares.
+        </p>
+      </div>
+
+      <!-- Service Item 1: Kids & Brinquedão -->
+      <div id="servico-kids" class="bg-white/90 rounded-3xl p-6 sm:p-8 border border-amber-200/80 shadow-md mb-12 scroll-mt-28">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-6 space-y-4">
+            <span class="bg-brand-pink/10 text-brand-pink font-extrabold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider inline-block">
+              Para Crianças de Todas as Idades
+            </span>
+            <h3 class="font-display font-black text-2xl sm:text-3xl text-slate-900">
+              Brinquedão Completo, Tobogã e Piscina de Bolinhas
+            </h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              O parque infantil da Kinder Fest é equipado com estrutura multinível reforçada, incluindo tobogã espiral gigante, piscina de bolinhas coloridas, áreas de obstáculos e túneis interativos. Tudo higienizado com rigor e projetado sob normas estritas de segurança.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm font-semibold text-slate-700">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Proteção em redes de alta resistência</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Espaço para fotos e brincadeiras lúdicas</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Monitores dedicados para cuidado contínuo</li>
+            </ul>
+            <div class="pt-2">
+              <a href="https://wa.me/5553999026014?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20as%20festas%20infantis%20com%20Brinqued%C3%A3o." target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-2xl font-bold text-xs sm:text-sm inline-flex items-center gap-2 shadow-md">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Reservar Festa Infantil</span>
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+            <img src="kinder1.jpg" alt="Brinquedão Kinder Fest" class="rounded-2xl shadow-md h-56 w-full object-cover">
+            <img src="kinder4.jpg" alt="Piscina de bolinhas Kinder Fest" class="rounded-2xl shadow-md h-56 w-full object-cover">
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Item 2: Jogos Eletrônicos & PS5 -->
+      <div id="servico-jogos" class="bg-white/90 rounded-3xl p-6 sm:p-8 border border-amber-200/80 shadow-md mb-12 scroll-mt-28">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-6 order-2 lg:order-1 grid grid-cols-2 gap-4">
+            <img src="kinder5.jpg" alt="Cockpit PS5 Kinder Fest" class="rounded-2xl shadow-md h-56 w-full object-cover">
+            <img src="kinder2.jpg" alt="Área de Jogos e Air Hockey" class="rounded-2xl shadow-md h-56 w-full object-cover">
+          </div>
+          <div class="lg:col-span-6 order-1 lg:order-2 space-y-4">
+            <span class="bg-purple-100 text-brand-purple font-extrabold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider inline-block">
+              Para Jovens, Pais & Adolescentes
+            </span>
+            <h3 class="font-display font-black text-2xl sm:text-3xl text-slate-900">
+              Cockpit PS5, Arcades, Sinuca, Totó & Subsoccer
+            </h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              O espaço de entretenimento da Kinder Fest é um dos grandes diferenciais elogiados pelos clientes no Google. Oferecemos simulador cockpit com PlayStation 5 e volante de corrida, mesa de Subsoccer, Air Hockey, máquina de arcade vintage, totó e sinuca oficial.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm font-semibold text-slate-700">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Jogos atualizados e atrativos para adultos</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Competições em família durante a festa</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Ambientes organizados com grama sintética</li>
+            </ul>
+            <div class="pt-2">
+              <a href="https://wa.me/5553999026014?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20%C3%A1rea%20de%20jogos%20e%20festas%20de%2015%20anos%2Fjovens." target="_blank" class="bg-brand-purple hover:bg-purple-700 text-white px-6 py-3 rounded-2xl font-bold text-xs sm:text-sm inline-flex items-center gap-2 shadow-md">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Orçamento para Aniversário / 15 Anos</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Item 3: Salão para 100 Pessoas -->
+      <div id="servico-salao" class="bg-white/90 rounded-3xl p-6 sm:p-8 border border-amber-200/80 shadow-md mb-12 scroll-mt-28">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-6 space-y-4">
+            <span class="bg-sky-100 text-brand-blue font-extrabold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider inline-block">
+              Sede Própria no Bairro Prado
+            </span>
+            <h3 class="font-display font-black text-2xl sm:text-3xl text-slate-900">
+              Salão de Festas para Até 100 Convidados
+            </h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Infraestrutura completa com mesas e cadeiras confortáveis, ambiente totalmente climatizado, cozinha de apoio, sanitários modernos e acessíveis e circulação ampla. O local perfeito para receber parentes e amigos com sofisticação.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm font-semibold text-slate-700">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Ampla iluminação e facilidade de acesso</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Climatização para dias quentes e frios</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Localização nobre no bairro Prado (Canguçu)</li>
+            </ul>
+            <div class="pt-2">
+              <a href="https://wa.me/5553999026014?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20a%20capacidade%20e%20estrutura%20do%20sal%C3%A3o." target="_blank" class="bg-brand-blue hover:bg-sky-600 text-white px-6 py-3 rounded-2xl font-bold text-xs sm:text-sm inline-flex items-center gap-2 shadow-md">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Consultar Disponibilidade do Salão</span>
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-6">
+            <img src="kinder8.jpg" alt="Salão de Eventos para 100 convidados Kinder Fest" class="rounded-2xl shadow-md h-64 w-full object-cover">
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Item 4: Decoração Temática KF -->
+      <div id="servico-decoracao" class="bg-white/90 rounded-3xl p-6 sm:p-8 border border-amber-200/80 shadow-md scroll-mt-28">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-6 order-2 lg:order-1">
+            <img src="kinder9.jpg" alt="Decoração Temática Infantil Kinder Fest" class="rounded-2xl shadow-md h-64 w-full object-cover">
+          </div>
+          <div class="lg:col-span-6 order-1 lg:order-2 space-y-4">
+            <span class="bg-amber-100 text-amber-800 font-extrabold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider inline-block">
+              Decorações Temáticas Exclusivas
+            </span>
+            <h3 class="font-display font-black text-2xl sm:text-3xl text-slate-900">
+              Decoração Conforme o Gosto do Cliente
+            </h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Desenvolvemos montagens temáticas encantadoras com painéis circulares modernos, cilindros personalizados, iluminação especial e suportes elegantes. Você pode escolher o tema favorito do seu filho ou celebração e nós cuidamos da harmonização.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm font-semibold text-slate-700">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Painéis temáticos e suporte para bolo e doces</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Montagem rápida e prática dentro do próprio salão</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Temas infantis, teen e comemorações gerais</li>
+            </ul>
+            <div class="pt-2">
+              <a href="https://wa.me/5553999026014?text=Ol%C3%A1!%20Gostaria%20de%20saber%20as%20op%C3%A7%C3%B5es%20de%20decora%C3%A7%C3%A3o%20tem%C3%A1tica." target="_blank" class="bg-amber-500 hover:bg-amber-600 text-slate-950 px-6 py-3 rounded-2xl font-bold text-xs sm:text-sm inline-flex items-center gap-2 shadow-md">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Ver Catálogo de Temas</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="diferenciais" class="py-20 bg-gradient-to-b from-amber-50/40 via-white/80 to-sky-50/40 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col items-center text-center mb-16">
+        <div class="inline-flex items-center gap-2 bg-amber-100 px-4 py-1.5 rounded-full text-xs font-bold text-amber-800 uppercase tracking-widest mb-3 border border-amber-200">
+          <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+          SEÇÃO DIFERENCIAIS • OBJETIVO: Motivar a Contratação
+        </div>
+        <h2 class="font-display font-black text-3xl sm:text-4xl text-slate-900 tracking-tight">
+          Por que a Kinder Fest é o melhor salão de Canguçu?
+        </h2>
+        <p class="text-slate-600 max-w-2xl mt-3 text-base sm:text-lg font-normal">
+          Confira o que nos destaca como o local mais recomendado da região para festas e celebrações.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="p-8 rounded-3xl bg-white/90 border border-amber-200/80 hover:bg-white hover:shadow-xl transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-sky-500 text-white flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-sky-500/20 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-gamepad"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Jogos e Brinquedos Muito Atuais</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            "Um dos pontos altos do local!" Cockpit PS5, Subsoccer, Air Hockey, Sinuca, Totó e Brinquedão garantem diversão ininterrupta.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-white/90 border border-amber-200/80 hover:bg-white hover:shadow-xl transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-brand-pink text-white flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-brand-pink/20 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Atendimento Atencioso</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Equipe altamente atenciosa antes, durante e após o evento. Cuidamos com carinho para que você curta a festa como convidado.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-white/90 border border-amber-200/80 hover:bg-white hover:shadow-xl transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-amber-500/20 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-building"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Sede Própria para 100 Pessoas</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Prédio próprio e amplo no bairro Prado em Canguçu/RS. Ambiente totalmente limpo, plano, climatizado e super aconchegante.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-white/90 border border-amber-200/80 hover:bg-white hover:shadow-xl transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-purple-600 text-white flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-purple-600/20 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Decoração Customizada</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Painéis modernos e arranjos conforme o tema da sua preferência, montados com praticidade diretamente no salão.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-white/90 border border-amber-200/80 hover:bg-white hover:shadow-xl transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-500 text-white flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-emerald-500/20 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Atendimento Rápido no WhatsApp</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Flexibilidade de horários para visitas e orçamentos detalhados enviados rapidamente em instantes sem complicações.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-white/90 border border-amber-200/80 hover:bg-white hover:shadow-xl transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-slate-900 text-white flex items-center justify-center text-xl font-bold mb-6 shadow-md group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-star text-amber-400"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Nota 4,9 no Google</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Avaliações com nota máxima de clientes e convidados que aprovaram nosso ambiente, estrutura e brinquedos.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="simulador" class="py-20 bg-gradient-to-b from-sky-50/40 via-amber-100/30 to-sky-50/30 relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-white/95 rounded-3xl p-6 sm:p-10 border border-amber-300/80 shadow-xl">
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <div class="inline-flex items-center gap-2 bg-amber-100 px-4 py-1.5 rounded-full text-xs font-bold text-amber-900 uppercase tracking-widest mb-2 border border-amber-200">
+            <i class="fa-solid fa-sliders text-amber-600"></i>
+            FERRAMENTA INTERATIVA • SIMULAÇÃO DE ORÇAMENTO
+          </div>
+          <h2 class="font-display font-black text-2xl sm:text-4xl text-slate-900">
+            Simule os Detalhes da Sua Festa
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base mt-2">
+            Escolha as preferências da sua comemoração e receba uma estimativa detalhada direto no seu WhatsApp!
+          </p>
+        </div>
+
+        <form id="partySimulatorForm" onsubmit="event.preventDefault(); sendSimulationToWhatsApp();" class="space-y-6">
+          
+          <!-- Event Type -->
+          <div>
+            <label class="block text-slate-800 font-extrabold text-sm mb-3">1. Qual o tipo de evento você está planejando?</label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <label class="cursor-pointer border-2 border-slate-200 rounded-2xl p-3 text-center hover:border-brand-blue has-[:checked]:border-brand-blue has-[:checked]:bg-sky-50 transition-all">
+                <input type="radio" name="eventType" value="Aniversário Infantil" checked class="hidden">
+                <i class="fa-solid fa-cake-candles text-brand-pink text-xl block mb-1"></i>
+                <span class="text-xs font-bold text-slate-800">Infantil</span>
+              </label>
+              
+              <label class="cursor-pointer border-2 border-slate-200 rounded-2xl p-3 text-center hover:border-brand-blue has-[:checked]:border-brand-blue has-[:checked]:bg-sky-50 transition-all">
+                <input type="radio" name="eventType" value="Festa de 15 Anos" class="hidden">
+                <i class="fa-solid fa-crown text-purple-500 text-xl block mb-1"></i>
+                <span class="text-xs font-bold text-slate-800">15 Anos / Teen</span>
+              </label>
+
+              <label class="cursor-pointer border-2 border-slate-200 rounded-2xl p-3 text-center hover:border-brand-blue has-[:checked]:border-brand-blue has-[:checked]:bg-sky-50 transition-all">
+                <input type="radio" name="eventType" value="Evento Familiar / Adulto" class="hidden">
+                <i class="fa-solid fa-people-group text-brand-blue text-xl block mb-1"></i>
+                <span class="text-xs font-bold text-slate-800">Familiar / Adulto</span>
+              </label>
+
+              <label class="cursor-pointer border-2 border-slate-200 rounded-2xl p-3 text-center hover:border-brand-blue has-[:checked]:border-brand-blue has-[:checked]:bg-sky-50 transition-all">
+                <input type="radio" name="eventType" value="Outras Celebrações" class="hidden">
+                <i class="fa-solid fa-champagne-glasses text-amber-500 text-xl block mb-1"></i>
+                <span class="text-xs font-bold text-slate-800">Outros Eventos</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Guests Range -->
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="text-slate-800 font-extrabold text-sm">2. Quantidade estimada de convidados:</label>
+              <span id="guestCountBadge" class="bg-brand-blue text-white font-extrabold text-xs px-3 py-1 rounded-full">50 Pessoas</span>
+            </div>
+            <input type="range" id="guestRange" min="20" max="100" step="5" value="50" oninput="document.getElementById('guestCountBadge').innerText = this.value + ' Pessoas'" class="w-full accent-brand-blue h-2 bg-slate-200 rounded-lg cursor-pointer">
+            <div class="flex justify-between text-[11px] text-slate-400 font-semibold mt-1">
+              <span>20 pessoas</span>
+              <span>50 pessoas</span>
+              <span>100 pessoas (Capacidade Máxima)</span>
+            </div>
+          </div>
+
+          <!-- Preferred Day -->
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-slate-800 font-extrabold text-sm mb-2">3. Preferência de dia:</label>
+              <select id="eventDay" class="w-full bg-slate-50 border border-slate-300 rounded-2xl p-3 text-sm font-semibold text-slate-800 focus:outline-none focus:border-brand-blue">
+                <option value="Sábado ou Domingo">Fim de Semana (Sáb / Dom)</option>
+                <option value="Sexta-feira à noite">Sexta-feira</option>
+                <option value="Segunda a Quinta-feira">Meio de Semana (Seg - Qui)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-slate-800 font-extrabold text-sm mb-2">4. Opção de Decoração:</label>
+              <div class="flex gap-3">
+                <label class="flex-1 cursor-pointer border border-slate-300 rounded-2xl p-3 text-center hover:border-brand-blue has-[:checked]:border-brand-blue has-[:checked]:bg-sky-50 text-xs font-bold">
+                  <input type="radio" name="decorOption" value="Decoração Temática Kinder Fest" checked class="hidden">
+                  <span>Com Decoração KF</span>
+                </label>
+                <label class="flex-1 cursor-pointer border border-slate-300 rounded-2xl p-3 text-center hover:border-brand-blue has-[:checked]:border-brand-blue has-[:checked]:bg-sky-50 text-xs font-bold">
+                  <input type="radio" name="decorOption" value="Apenas o Salão (Trago minha decoração)" class="hidden">
+                  <span>Apenas o Salão</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-4 text-center">
+            <button type="submit" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold px-10 py-4 rounded-2xl shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 transition-all flex items-center justify-center gap-3 text-base mx-auto">
+              <i class="fa-brands fa-whatsapp text-2xl"></i>
+              <span>Enviar Simulação no WhatsApp</span>
+            </button>
+            <p class="text-xs text-slate-400 mt-2">Sem compromisso! Nossa equipe responderá em instantes com valores e datas.</p>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="galeria" class="py-20 bg-gradient-to-b from-sky-50/40 via-amber-50/30 to-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-purple-100 px-4 py-1.5 rounded-full text-xs font-bold text-brand-purple uppercase tracking-widest mb-3 border border-purple-200">
+            <i class="fa-brands fa-instagram text-brand-pink"></i>
+            GALERIA DE FOTOS REAIS • @KINDERFEST_KF
+          </div>
+          <h2 class="font-display font-black text-3xl sm:text-4xl text-slate-900 tracking-tight">
+            Conheça o espaço Kinder Fest em detalhes
+          </h2>
+        </div>
+
+        <!-- Social Media Buttons -->
+        <div class="mt-4 md:mt-0 flex flex-wrap gap-3">
+          <a href="https://www.instagram.com/kinderfest_kf/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white px-5 py-2.5 rounded-full text-xs font-bold shadow-sm hover:opacity-90 transition-opacity flex items-center gap-2">
+            <i class="fa-brands fa-instagram text-sm"></i>
+            <span>Instagram @kinderfest_kf</span>
+          </a>
+          <a href="https://web.facebook.com/p/Kinder-Fest-Festas-e-Eventos-61580404436571/" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-5 py-2.5 rounded-full text-xs font-bold shadow-sm hover:bg-blue-700 transition-colors flex items-center gap-2">
+            <i class="fa-brands fa-facebook-f text-sm"></i>
+            <span>Página no Facebook</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Photo Gallery Grid showing all kinder1.jpg to kinder9.jpg -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="rounded-3xl overflow-hidden shadow-md border border-amber-200/70 relative group bg-white">
+          <img src="kinder1.jpg" alt="Parque Infantil Brinquedão" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-white text-xs font-bold bg-slate-900/80 px-3 py-1.5 rounded-xl">Brinquedão & Piscina de Bolinhas</span>
+          </div>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden shadow-md border border-amber-200/70 relative group bg-white">
+          <img src="kinder2.jpg" alt="Área de Jogos Arcade e Air Hockey" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-white text-xs font-bold bg-slate-900/80 px-3 py-1.5 rounded-xl">Área de Jogos & Arcade</span>
+          </div>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden shadow-md border border-amber-200/70 relative group bg-white">
+          <img src="kinder3.jpg" alt="Mesa de Sinuca Oficial" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-white text-xs font-bold bg-slate-900/80 px-3 py-1.5 rounded-xl">Mesa de Sinuca para Adultos</span>
+          </div>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden shadow-md border border-amber-200/70 relative group bg-white">
+          <img src="kinder4.jpg" alt="Piscina de Bolinhas Coloridas" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-white text-xs font-bold bg-slate-900/80 px-3 py-1.5 rounded-xl">Piscina de Bolinhas Gigante</span>
+          </div>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden shadow-md border border-amber-200/70 relative group bg-white">
+          <img src="kinder5.jpg" alt="Cockpit PS5 Simulador de Corrida" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-white text-xs font-bold bg-slate-900/80 px-3 py-1.5 rounded-xl">Cockpit PS5 & Simulador</span>
+          </div>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden shadow-md border border-amber-200/70 relative group bg-white">
+          <img src="kinder6.jpg" alt="Mesa de Subsoccer" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-white text-xs font-bold bg-slate-900/80 px-3 py-1.5 rounded-xl">Subsoccer & Disputas</span>
+          </div>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden shadow-md border border-amber-200/70 relative group bg-white">
+          <img src="kinder7.jpg" alt="Mesa de Totó e Futebol de Mesa" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-white text-xs font-bold bg-slate-900/80 px-3 py-1.5 rounded-xl">Totó / Pebolim</span>
+          </div>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden shadow-md border border-amber-200/70 relative group bg-white">
+          <img src="kinder8.jpg" alt="Salão de Festas Climatizado" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-white text-xs font-bold bg-slate-900/80 px-3 py-1.5 rounded-xl">Salão de Festas para 100 Pessoas</span>
+          </div>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden shadow-md border border-amber-200/70 relative group bg-white">
+          <img src="kinder9.jpg" alt="Decoração Temática Aviador Kinder Fest" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-white text-xs font-bold bg-slate-900/80 px-3 py-1.5 rounded-xl">Decorações Temáticas Exclusivas</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="depoimentos" class="py-20 bg-gradient-to-b from-amber-50/40 via-sky-50/30 to-amber-50/40 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col items-center text-center mb-16">
+        <div class="inline-flex items-center gap-2 bg-emerald-100/80 px-4 py-1.5 rounded-full text-xs font-bold text-emerald-800 uppercase tracking-widest mb-3 border border-emerald-200">
+          <i class="fa-brands fa-google text-emerald-600"></i>
+          DEPOIMENTOS REAIS • GOOGLE REVIEWS (4,9 ⭐)
+        </div>
+        <h2 class="font-display font-black text-3xl sm:text-4xl text-slate-900 tracking-tight">
+          O que as famílias de Canguçu dizem sobre nós
+        </h2>
+        <p class="text-slate-600 max-w-2xl mt-3 text-base sm:text-lg font-normal">
+          Confira avaliações reais retiradas diretamente da nossa ficha no Google Meu Negócio.
+        </p>
+      </div>
+
+      <!-- Testimonial Cards -->
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Review 1 -->
+        <div class="bg-white/90 p-8 rounded-3xl border border-amber-200/80 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 gap-1 text-sm mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-base leading-relaxed italic mb-6">
+              "Salão de festas amplo, com vários brinquedos e jogos bem atuais!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+            <div class="w-10 h-10 rounded-full bg-sky-100 text-brand-blue font-black flex items-center justify-center text-sm">
+              C
+            </div>
+            <div>
+              <div class="font-bold text-slate-900 text-sm">Cliente Kinder Fest</div>
+              <div class="text-xs text-slate-400">Avaliação pública no Google</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white/90 p-8 rounded-3xl border border-amber-200/80 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 gap-1 text-sm mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-base leading-relaxed italic mb-6">
+              "Ótimo atendimento, estrutura ideal para a festa perfeita!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+            <div class="w-10 h-10 rounded-full bg-rose-100 text-brand-pink font-black flex items-center justify-center text-sm">
+              F
+            </div>
+            <div>
+              <div class="font-bold text-slate-900 text-sm">Família Canguçuense</div>
+              <div class="text-xs text-slate-400">Avaliação pública no Google</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white/90 p-8 rounded-3xl border border-amber-200/80 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 gap-1 text-sm mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-base leading-relaxed italic mb-6">
+              "O espaço de entretenimento é, sem dúvida, um dos pontos altos do local."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+            <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-700 font-black flex items-center justify-center text-sm">
+              R
+            </div>
+            <div>
+              <div class="font-bold text-slate-900 text-sm">Convidado de Evento</div>
+              <div class="text-xs text-slate-400">Avaliação pública no Google</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="localizacao" class="py-20 bg-gradient-to-b from-sky-50/30 via-amber-50/30 to-amber-100/40 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Contact Details -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center gap-2 bg-slate-100 px-4 py-1.5 rounded-full text-xs font-bold text-slate-700 uppercase tracking-widest border border-slate-200">
+            <i class="fa-solid fa-location-dot text-brand-blue"></i>
+            LOCALIZAÇÃO & CONTATO • OBJETIVO: Facilitar Visita e Agendamento
+          </div>
+          
+          <h2 class="font-display font-black text-3xl sm:text-4xl text-slate-900 tracking-tight">
+            Venha conhecer o salão pessoalmente em Canguçu
+          </h2>
+          
+          <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+            Estamos localizados no bairro Prado em uma rua tranquila e de facílimo acesso. Agende um horário conosco para ver o espaço com seus próprios olhos!
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <!-- Endereço -->
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-2xl bg-sky-50 text-brand-blue flex items-center justify-center flex-shrink-0 text-lg">
+                <i class="fa-solid fa-map-pin"></i>
+              </div>
+              <div>
+                <div class="font-bold text-slate-900 text-sm">Endereço Completo</div>
+                <div class="text-xs text-slate-600 mt-0.5">R. Firmina de Matos Moreira, 362 - Prado, Canguçu - RS, 96600-000</div>
+              </div>
+            </div>
+
+            <!-- Telefone -->
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0 text-lg">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <div class="font-bold text-slate-900 text-sm">Telefone / WhatsApp</div>
+                <div class="text-xs text-slate-600 mt-0.5">(53) 99902-6014</div>
+              </div>
+            </div>
+
+            <!-- Horário -->
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-2xl bg-purple-50 text-brand-purple flex items-center justify-center flex-shrink-0 text-lg">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <div class="font-bold text-slate-900 text-sm">Atendimento e Consultas</div>
+                <div class="text-xs text-slate-600 mt-0.5">Aberto 24 horas para orçamentos e mensagens via WhatsApp</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="pt-4 flex flex-wrap gap-4">
+            <a href="https://maps.google.com/?q=R.+Firmina+de+Matos+Moreira,+362+-+Prado,+Cangu%C3%A7u+-+RS,+96600-000" target="_blank" rel="noopener noreferrer" class="bg-slate-900 hover:bg-slate-800 text-white px-6 py-3.5 rounded-2xl font-extrabold text-sm transition-all flex items-center gap-2 shadow-md">
+              <i class="fa-solid fa-diamond-turn-right text-amber-400"></i>
+              <span>Abrir Rota no Google Maps</span>
+            </a>
+            
+            <a href="https://wa.me/5553999026014?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20datas%20dispon%C3%ADveis%20na%20Kinder%20Fest." target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3.5 rounded-2xl font-extrabold text-sm transition-all flex items-center gap-2 shadow-md">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Enviar Mensagem</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Google Maps Embed Frame -->
+        <div class="lg:col-span-7">
+          <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 h-[400px] sm:h-[450px] relative bg-slate-100">
+            <iframe 
+              title="Mapa Kinder Fest Canguçu RS"
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.0123456789!2d-52.68!3d-31.39!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDIzJzI0LjAiUyA1MsKwNDAnNDguMCJX!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr"
+              class="w-full h-full">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        
+        <!-- Brand Info -->
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-white p-0.5 flex items-center justify-center overflow-hidden">
+              <img src="kinder10.jpg" alt="Kinder Fest" class="w-full h-full object-contain">
+            </div>
+            <span class="font-display font-black text-2xl text-white tracking-tight">
+              KINDER <span class="text-brand-blue">FEST</span>
+            </span>
+          </div>
+          <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
+            Salão de Festas e Eventos planejado para atender toda a família em Canguçu/RS. Estrutura completa para até 100 pessoas, brinquedos atuais, jogos eletrônicos e decorações temáticas.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://www.instagram.com/kinderfest_kf/" target="_blank" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-brand-pink hover:text-white text-slate-300 flex items-center justify-center transition-all">
+              <i class="fa-brands fa-instagram text-lg"></i>
+            </a>
+            <a href="https://web.facebook.com/p/Kinder-Fest-Festas-e-Eventos-61580404436571/" target="_blank" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-blue-600 hover:text-white text-slate-300 flex items-center justify-center transition-all">
+              <i class="fa-brands fa-facebook-f text-lg"></i>
+            </a>
+            <a href="https://wa.me/5553999026014" target="_blank" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-emerald-500 hover:text-white text-slate-300 flex items-center justify-center transition-all">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h3 class="text-white font-extrabold text-xs uppercase tracking-wider mb-4">Navegação</h3>
+          <ul class="space-y-2.5 text-xs font-semibold">
+            <li><a href="#inicio" class="hover:text-white transition-colors">Início</a></li>
+            <li><a href="#sobre" class="hover:text-white transition-colors">Sobre o Salão</a></li>
+            <li><a href="#servicos" class="hover:text-white transition-colors">Nossos Serviços</a></li>
+            <li><a href="#diferenciais" class="hover:text-white transition-colors">Diferenciais</a></li>
+            <li><a href="#simulador" class="hover:text-white transition-colors">Simulador de Festa</a></li>
+            <li><a href="#galeria" class="hover:text-white transition-colors">Galeria de Fotos</a></li>
+            <li><a href="#localizacao" class="hover:text-white transition-colors">Contato & Localização</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-white font-extrabold text-xs uppercase tracking-wider mb-4">Atendimento</h3>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li class="flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+              <span>(53) 99902-6014</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-location-dot text-brand-blue mt-0.5"></i>
+              <span>R. Firmina de Matos Moreira, 362 - Prado, Canguçu - RS</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <span>4,9 ⭐ Avaliações no Google</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-800 text-center text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>
+          © <span id="currentYear"></span> Kinder Fest - Festas e Eventos. Todos os direitos reservados.
+        </div>
+        <div>
+          Canguçu - Rio Grande do Sul
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Sticky WhatsApp Button -->
+  <a href="https://wa.me/5553999026014?text=Ol%C3%A1!%20Gostaria%20de%20saber%20datas%20dispon%C3%ADveis%20e%20or%C3%A7amentos%20na%20Kinder%20Fest." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 sm:w-16 sm:h-16 rounded-full shadow-2xl flex items-center justify-center text-2xl sm:text-3xl hover:scale-110 transition-transform duration-300 group" aria-label="Falar no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="absolute right-full mr-3 bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+      Falar no WhatsApp
+    </span>
+  </a>
+
+  <script>
+    // Set current copyright year
+    document.getElementById('currentYear').innerText = new Date().getFullYear();
+
+    // Mobile Navigation Logic
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      if (mobileMenu.classList.contains('hidden')) {
+        menuIcon.className = 'fa-solid fa-bars text-xl';
+      } else {
+        menuIcon.className = 'fa-solid fa-xmark text-xl';
+      }
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.className = 'fa-solid fa-bars text-xl';
+      });
+    });
+
+    // Dynamic Banner Carousel Logic
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dotsContainer = document.getElementById('carouselDots');
+    const prevBtn = document.getElementById('prevSlide');
+    const nextBtn = document.getElementById('nextSlide');
+    let currentSlide = 0;
+    let slideInterval;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        if (i === index) {
+          slide.classList.remove('opacity-0', 'z-0');
+          slide.classList.add('opacity-100', 'z-10');
+        } else {
+          slide.classList.remove('opacity-100', 'z-10');
+          slide.classList.add('opacity-0', 'z-0');
+        }
+      });
+
+      const dots = dotsContainer.querySelectorAll('button');
+      dots.forEach((dot, i) => {
+        if (i === index) {
+          dot.className = 'w-8 h-2.5 rounded-full bg-white transition-all';
+        } else {
+          dot.className = 'w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-all';
+        }
+      });
+
+      currentSlide = index;
+    }
+
+    function nextSlide() {
+      let newIndex = (currentSlide + 1) % slides.length;
+      showSlide(newIndex);
+    }
+
+    function prevSlide() {
+      let newIndex = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(newIndex);
+    }
+
+    function startAutoSlide() {
+      stopAutoSlide();
+      slideInterval = setInterval(nextSlide, 5000);
+    }
+
+    function stopAutoSlide() {
+      if (slideInterval) clearInterval(slideInterval);
+    }
+
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      startAutoSlide();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      startAutoSlide();
+    });
+
+    dotsContainer.addEventListener('click', (e) => {
+      if (e.target.dataset.slide !== undefined) {
+        showSlide(parseInt(e.target.dataset.slide));
+        startAutoSlide();
+      }
+    });
+
+    // Initialize Auto Carousel Loop
+    startAutoSlide();
+
+    // WhatsApp Simulation Dispatcher
+    function sendSimulationToWhatsApp() {
+      const form = document.getElementById('partySimulatorForm');
+      const eventType = form.querySelector('input[name="eventType"]:checked').value;
+      const guests = document.getElementById('guestRange').value;
+      const day = document.getElementById('eventDay').value;
+      const decor = form.querySelector('input[name="decorOption"]:checked').value;
+
+      const message = `Ol%C3%A1!%20Fiz%20uma%20simula%C3%A7%C3%A3o%20de%20festa%20no%20site%20da%20Kinder%20Fest:%0A%0A` +
+        `%F0%9F%8E%89%20*Tipo%20de%20Evento:*%20${encodeURIComponent(eventType)}%0A` +
+        `%F0%9F%90%AA%20*N%C2%BA%20de%20Convidados:*%20${guests}%20pessoas%0A` +
+        `%F0%9F%93%95%20*Dia%20Desejado:*%20${encodeURIComponent(day)}%0A` +
+        `%F0%9F%8E%A8%20*Decora%C3%A7%C3%A3o:*%20${encodeURIComponent(decor)}%0A%0A` +
+        `Gostaria%20de%20saber%20a%20disponibilidade%20de%20datas%20e%20o%20or%C3%A7amento%20detalhado.`;
+
+      window.open(`https://wa.me/5553999026014?text=${message}`, '_blank');
+    }
+  </script>
+</body>
+</html>
